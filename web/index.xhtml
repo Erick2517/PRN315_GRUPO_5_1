@@ -1,12 +1,45 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
     <h:head>
-        <title>Facelet Title</title>
+        <title>Inicio de sesion</title>
+        
     </h:head>
-    <h:body>
-        Hello from Facelets
+    <h:body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+        
+       <h:form style="display: flex; flex-direction: column; align-items: center; max-width: 400px; margin: auto; 
+               border: 2px solid #ccc; padding: 20px; border-radius: 10px;
+               box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.8);">
+
+            <h1 style="font-family:Trebuchet MS, sans-serif;color: blue; text-align: center; margin-bottom: 20px;">Registro de Usuario</h1>
+            <img src="2.png" width="100" height="100" alt="logo" style="margin-bottom: 20px;" />
+
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:outputLabel for="username" value="Usuario:" />
+                <p:inputText id="username" value="" required="true" style="width: 100%;" />
+            </div>
+
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:outputLabel for="password" value="Contraseña:"/>
+                <p:password id="password" value="#{registerBean.password}/atributClaseRegisrtro" required="true" style="width: 100%;" />
+            </div>
+
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:outputLabel for="role" value="Rol:"/>
+                <p:selectOneMenu id="role" value="#{registerBean.role}" style="width: 100%;">
+                    <f:selectItem itemValue="Usuario" itemLabel="Usuario" />
+                    <f:selectItem itemValue="admin" itemLabel="Administrador" />
+                </p:selectOneMenu>
+            </div>
+
+            <p:commandButton value="Registrar" action="#{registerBean.register}" style="margin-bottom: 20px; width: 100%;" />
+
+            <h:link outcome="User" value="¿Registrar nuevo Usuario?" style="text-align: center;" />
+        </h:form>
     </h:body>
 </html>
 
