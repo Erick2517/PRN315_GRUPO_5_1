@@ -18,4 +18,8 @@ public class Organizacion implements Serializable {
     private List<OportunidadVolun> oportunidadesVolun;
 
     // Getters y Setters
+
+    public Object getId() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

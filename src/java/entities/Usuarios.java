@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -51,6 +52,10 @@ public class Usuarios implements Serializable {
         inverseJoinColumns = @JoinColumn(name = "idHabilidad")
     )
     private Set<Habilidades> habilidades;
+    
+    @OneToMany(mappedBy = "usuario")
+    private Set<RegistroVolun> registrosVolun;
+
 
     // Constructor por defecto
     public Usuarios() {}

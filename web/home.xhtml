@@ -1,10 +1,47 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="./WEB-INF/plantilla/base.xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-    <ui:define name="contenido">
-        este es el inicio del la app
-    </ui:define>
+    <h:head>
+        <title>Menú Principal</title>
+    </h:head>
+    
+    <h:body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0;">
+        <h:form style="display: flex; flex-direction: column; align-items: center; max-width: 600px; margin: auto; 
+                      border: 2px solid #ccc; padding: 20px; border-radius: 10px;
+                      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.8);">
 
-</ui:composition>
+            <h1 style="font-family:Trebuchet MS, sans-serif;color: blue; text-align: center; margin-bottom: 20px;">
+                Menú Principal
+            </h1>
+
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Gestión de Usuarios" action="usuarios.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Gestión de Perfiles" action="perfiles.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Gestión de Habilidades" action="habilidades.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Gestión de Organizaciones" action="organizaciones.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Gestión de Oportunidades de Voluntariado" action="oportunidadesVolun.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Registro de Voluntariado" action="registroVolun.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Asignación de Habilidades a Usuarios" action="usuariosHabilidades.xhtml" style="width: 100%;" />
+            </div>
+            <div style="width: 100%; text-align: left; margin-bottom: 15px;">
+                <p:commandButton value="Asignación de Habilidades a Oportunidades" action="oportunidadHabilidad.xhtml" style="width: 100%;" />
+            </div>
+        </h:form>
+    </h:body>
+</html>
