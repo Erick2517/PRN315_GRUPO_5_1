@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/erick/Desktop/ProeyctoP3/PRN315_GRUPO_5_1/web/home.xhtml</file>
-            <file>file:/C:/Users/erick/Desktop/ProeyctoP3/PRN315_GRUPO_5_1/web/WEB-INF/plantilla/base.xhtml</file>
+            <file>file:/C:/Users/19704/Documents/NetBeansProjects/PRN315_GRUPO_5_1/src/java/entities/Habilidades.java</file>
+            <file>file:/C:/Users/19704/Documents/NetBeansProjects/PRN315_GRUPO_5_1/src/java/entities/UsuariosHabilidades.java</file>
+            <file>file:/C:/Users/19704/Documents/NetBeansProjects/PRN315_GRUPO_5_1/src/java/entities/Perfiles.java</file>
+            <file>file:/C:/Users/19704/Documents/NetBeansProjects/PRN315_GRUPO_5_1/src/java/entities/Usuarios.java</file>
         </group>
     </open-files>
 </project-private>
